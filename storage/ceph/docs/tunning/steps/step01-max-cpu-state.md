@@ -5,13 +5,13 @@
 - [See](https://askubuntu.com/questions/749349/how-to-set-intel-idle-max-cstate-1)
 
 ## Befor
-![iops01](./images/iops01)
-![latency01](./images/latency01)
+![iops01](../images/iops01)
+![latency01](../images/latency01)
 
 ## After
-![iops02](./images/iops02)
-![latency02](./images/latency02)
+![iops02](../images/iops02)
+![latency02](../images/latency02)
 
 ## Resaults
-![resault01](./images/resault01)
-![resault01](./images/resault02)
+![resault01](../images/resault01)
+![resault01](../images/resault02)
