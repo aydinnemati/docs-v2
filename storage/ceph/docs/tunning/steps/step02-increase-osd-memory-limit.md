@@ -10,6 +10,3 @@
 
 ![iops02](../images/iops02-step02)
 ![latency01](../images/latency02-step02)
-
-## Resaults
-
