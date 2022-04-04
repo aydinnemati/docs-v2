@@ -27,3 +27,6 @@
 ### configuration
 - RAM per OSD 5GB
 - CPU per OSD 1 core
+
+
+# Defaults
