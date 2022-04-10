@@ -34,6 +34,8 @@ placement:
     - Node01
     - Node02
 data_devices:
+  # limit: 9
+  # all: true
   paths:
     - /dev/sdb
 db_devices:
