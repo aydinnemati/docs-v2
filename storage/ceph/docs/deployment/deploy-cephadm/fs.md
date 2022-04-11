@@ -22,16 +22,16 @@ placement:
 
 ```
 ```bash
-$ sudo ceph osd pools create *<fs metadata pool name>*metadata
+$ sudo ceph osd pool create *<fs metadata pool name>*metadata
 
 example:
-$ sudo ceph osd pools create test-fs-metadata
+$ sudo ceph osd pool create test-fs-metadata
 ```
 ```bash
-$ sudo ceph osd pools create *<fs data pool name>*data
+$ sudo ceph osd pool create *<fs data pool name>*data
 
 example:
-$ sudo ceph osd pools create test-fs-data
+$ sudo ceph osd pool create test-fs-data
 ```
 ```bash
 $ sudo ceph fs new *< mds server name >* *< fs metadata pool name >* *<fs data pool name>*
