@@ -8,7 +8,7 @@ See [ceph.com](https://docs.ceph.com/en/pacific/rados/configuration/bluestore-co
 $ sudo vgcreate ceph-db-0 /dev/sdx
 
 # example
-$ sudo vgcreate ceph-sff10-wal-db-00 /dev/sdg
+$ sudo vgcreate ceph-sff10-ssd00 /dev/sdg
 ```
 
 2. create logical volumes for WAL and DB
@@ -17,11 +17,11 @@ $ sudo lvcreate -L 50GB -n db-0 ceph-db-0
 ```
 > WAL
 ```bash
-$ sudo lvcreate -L 45GB -n ceph-sff10-wal00 ceph-sff10-wal-db-00
+$ sudo lvcreate -L 45GB -n ceph-sff10-wal00 ceph-sff10-ssd00
 ```
 > DB
 ```bash
-$ sudo lvcreate -L 35GB -n ceph-sff10-db00 ceph-sff10-wal-db-00
+$ sudo lvcreate -L 35GB -n ceph-sff10-db00 ceph-sff10-ssd00
 ```
 
 # **Deferred writes**
@@ -55,47 +55,47 @@ $ sudo ceph-volume lvm create --bluestore --data ceph-block-0/block-0 --block.db
 
 ```yaml
 service_type: osd
-service_id: osd_wal_db_seperated_sff-10
+service_id: osd_wal_db_seperated_sff-15
 placement:
   hosts:
-    - sff-10
+    - sff-14
 data_devices:
   # limit: 9
   # all: true
   paths:
-    - /dev/sdb
     - /dev/sdc
     - /dev/sdd
     - /dev/sde
     - /dev/sdf
-    - /dev/sdh
-    - /dev/sdi
+    - /dev/sdg
     - /dev/sdj
+    - /dev/sdi
     - /dev/sdk
+    - /dev/sdl
 
 db_devices:
   paths:
-    - ceph-sff10-wal-db-00/ceph-sff10-db00
-    - ceph-sff10-wal-db-00/ceph-sff10-db01
-    - ceph-sff10-wal-db-00/ceph-sff10-db02
-    - ceph-sff10-wal-db-00/ceph-sff10-db03
-    - ceph-sff10-wal-db-00/ceph-sff10-db04
-    - ceph-sff10-wal-db-00/ceph-sff10-db05
-    - ceph-sff10-wal-db-00/ceph-sff10-db06
-    - ceph-sff10-wal-db-00/ceph-sff10-db07
-    - ceph-sff10-wal-db-00/ceph-sff10-db08
+    - ceph-sff15-ssd00/ceph-sff15-db00
+    - ceph-sff15-ssd00/ceph-sff15-db01
+    - ceph-sff15-ssd00/ceph-sff15-db02
+    - ceph-sff15-ssd00/ceph-sff15-db03
+    - ceph-sff15-ssd00/ceph-sff15-db04
+    - ceph-sff15-ssd00/ceph-sff15-db05
+    - ceph-sff15-ssd00/ceph-sff15-db06
+    - ceph-sff15-ssd00/ceph-sff15-db07
+    - ceph-sff15-ssd00/ceph-sff15-db08
 
 wal_devices:
   paths:
-    - ceph-sff10-wal-db-00/ceph-sff10-wal00
-    - ceph-sff10-wal-db-00/ceph-sff10-wal01
-    - ceph-sff10-wal-db-00/ceph-sff10-wal02
-    - ceph-sff10-wal-db-00/ceph-sff10-wal03
-    - ceph-sff10-wal-db-00/ceph-sff10-wal04
-    - ceph-sff10-wal-db-00/ceph-sff10-wal05
-    - ceph-sff10-wal-db-00/ceph-sff10-wal06
-    - ceph-sff10-wal-db-00/ceph-sff10-wal07
-    - ceph-sff10-wal-db-00/ceph-sff10-wal08
+    - ceph-sff15-ssd00/ceph-sff15-wal00
+    - ceph-sff15-ssd00/ceph-sff15-wal01
+    - ceph-sff15-ssd00/ceph-sff15-wal02
+    - ceph-sff15-ssd00/ceph-sff15-wal03
+    - ceph-sff15-ssd00/ceph-sff15-wal04
+    - ceph-sff15-ssd00/ceph-sff15-wal05
+    - ceph-sff15-ssd00/ceph-sff15-wal06
+    - ceph-sff15-ssd00/ceph-sff15-wal07
+    - ceph-sff15-ssd00/ceph-sff15-wal08
 ```
 
 # deploy

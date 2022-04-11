@@ -2,6 +2,7 @@
 network:
     ethernets:
         eno1:
+            mtu: 9000
             dhcp4: false
             addresses:
             - 10.0.21.111/24
