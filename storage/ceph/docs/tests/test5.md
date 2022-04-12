@@ -5,4 +5,7 @@
 - same as Test 4
 
 # after
-
+1. taking out SSD
+2. reboot server and deploy again OSD's
+# resault
+- failed WAL - DB disk WILL **NOT** RECOVER
