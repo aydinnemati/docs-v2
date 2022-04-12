@@ -9,3 +9,5 @@
 2. reboot server and deploy again OSD's
 # resault
 - failed WAL - DB disk WILL **NOT** RECOVER
+
+# removed all OSDs and redeploy again
