@@ -4,4 +4,6 @@
 ## number of active mds daemons
 ```bash
 $ sudo ceph fs set <name> max_mds <number>
+# example
+$ sudo ceph fs set cephfs max_mds 2
 ```
