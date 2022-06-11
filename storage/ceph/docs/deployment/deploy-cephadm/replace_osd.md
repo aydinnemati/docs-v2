@@ -93,4 +93,5 @@ $ sudo ceph-volume lvm zap --destroy disk path # like /dev/sdb
 $ sudo ceph-volume lvm zap --destroy VG_NAME/LV_NAME # like ceph-ir-aasaam-r1-storage01-ceph-osd-03-ssd00/ceph-ir-aasaam-r1-storage01-ceph-osd-03-db08 
 ```
 3. recreate wal and db lv
-4. delete osd's and deploy again [safe remove osd](./osd-safe-remove.md)
+4. delete osd's [safe remove osd](./osd-safe-remove.md)
+5. deploy again (probably should comment other osd's from specs and deploy, then  uncomment and deploy all again)
