@@ -1,0 +1,91 @@
+---
+- name: prepare server
+  hosts: {{ SERVER_IP }}
+  become: true
+  vars_files:
+    - ../vars/server-prepare-vars.yml
+  tasks:
+
+
+## apt update
+    - name: Update
+      apt:
+        name: "*"
+        state: latest
+
+
+
+##############################################################################
+## ssh configuration
+##############################################################################
+
+
+
+##############################################################################
+## install dependencies
+##############################################################################
+    - name: Install a list of dependencies
+      apt:
+        pkg:
+        - docker.ip
+        - net-tools
+        - vim
+        - nano
+        - chrony
+
+
+
+##############################################################################
+## pull ceph docker image
+##############################################################################
+    - name: Download cephadm
+      get_url:
+        url: https://github.com/ceph/ceph/raw/quincy/src/cephadm/cephadm
+        dest: /etc/cephadm
+        mode: +x
+
+
+
+##############################################################################
+## install ceph repo
+##############################################################################
+    - name: ceph repo
+      ansible.builtin.command: /root/cephadm add-repo --release quincy
+    - name: install cephadm
+      ansible.builtin.command: /root/cephadm install
+
+
+
+##############################################################################
+## apt update
+##############################################################################
+    - name: Update
+      apt:
+        name: "*"
+        state: latest
+
+
+
+##############################################################################
+## install ceph command
+##############################################################################
+    - name: install ceph command v17
+      apt:
+        name: ceph=17.2.0-1focal
+        update_cache: yes
+
+
+
+##############################################################################
+## network configuration
+##############################################################################
+    - name: rendering netplan configuration
+      template:
+        src: ../templates/netplan.jinja
+        dest: /etc/netplan/50-cloud-init.yaml
+
+
+
+##############################################################################
+## ntp configuration
+##############################################################################

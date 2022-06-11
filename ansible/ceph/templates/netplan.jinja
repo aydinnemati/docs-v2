@@ -1,0 +1,25 @@
+network:
+    ethernets:
+        eno1:
+            mtu: 9000
+            dhcp4: false
+            addresses:
+            - {{ SERVER_CIDR }}
+            gateway4: 10.0.21.1
+            nameservers:
+                addresses:
+                - 1.1.1.1
+                - 8.8.8.8
+        eno2:
+            dhcp4: false
+            mtu: 9000
+            addresses:
+            - {{ SERVER_CIDR }}
+            nameservers:
+                addresses:
+                - 1.1.1.1
+                - 8.8.8.8
+            routes:
+             - to: {{ GATEWAY4 }}
+               via: 10.0.22.0/24
+    version: 2
