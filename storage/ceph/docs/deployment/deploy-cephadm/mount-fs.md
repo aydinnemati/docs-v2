@@ -38,5 +38,11 @@ $ sudo [{ipaddress}:{port}]:/ {mount}/{mountpoint} ceph [name=username,secret=se
 $ sudo mount -t ceph 10.0.23.4:6789,10.0.23.6:6789:/ /data-ceph/  -o name=admin,secret=AQCl5uNgtTw4FBAA/NHD5ykDm77Ugz5lBa7jTQ==
 ```
 ```bash
-$ sudo mount -t ceph 10.0.23.4:6789,10.0.23.6:6789:/test/path/to/mount /data-ceph/  -o name=*<client>*,secret=*<client_secret>* # mountes /test/path/to/mount OF CEPH FS TO /data-ceph ON DESTINATION
+$ sudo mount -t ceph 10.0.23.4:6789,10.0.23.6:6789:/test/path/to/mount /data-ceph/  -o name=*<client>*,secret=*<client_secret>* # mountes /test/path/to/mount OF CEPH 
+FS TO /data-ceph ON DESTINATION
+
+# example - fstab
+# 10.0.21.113,10.0.21.117:/     /ceph/fs01-r3    ceph    name=admin,noatime,_netdev,noexec,nodiratime,secret=AQDEwbFiCqY8EBAAbvh2TuQ5VRUZV8+SaeBZ8g==,mds_namespace=fs01-r3    0       2
+# 10.0.21.113,10.0.21.117:/     /ceph/fs02-r1    ceph    name=admin,noatime,_netdev,noexec,nodiratime,secret=AQDEwbFiCqY8EBAAbvh2TuQ5VRUZV8+SaeBZ8g==,mds_namespace=fs02-r1    0       2
+
 ```
