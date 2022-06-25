@@ -14,5 +14,5 @@ $ sudo ceph config get mon mon_allow_pool_size_one
 $ sudo ceph config set mon mon_allow_pool_size_one true
 # then reset mon service
 $ sudo ceph orch reconfig mon
-$ sudo ceph osd pool set **<POOL NAME>** 1 --yes-i-really-mean-it
+$ sudo ceph osd pool set **<POOL NAME>** size 1 --yes-i-really-mean-it
 ```
