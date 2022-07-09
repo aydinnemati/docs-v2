@@ -1,5 +1,5 @@
 # Miscellaneous
-
+See [ceph docs](https://docs.ceph.com/en/quincy/rados/operations/health-checks/)
 ## RECENT_CRASH
 - One or more Ceph daemons has crashed recently, and the crash has not yet been archived (acknowledged) by the administrator. This may indicate a software bug, a hardware problem (e.g., a failing disk), or some other problem.
 New crashes can be listed with:
