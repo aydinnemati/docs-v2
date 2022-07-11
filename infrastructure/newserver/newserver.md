@@ -1,4 +1,5 @@
 # new bare metal servers todo
+- set rsyslog from ilo panel if needed
 - document server information
 - check BIOS and raid controller battery voltages.
 - cleaning and CPU silicone paste
