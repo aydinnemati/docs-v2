@@ -1,4 +1,5 @@
 # cephFS
+See [ceph docs](https://docs.ceph.com/en/quincy/cephfs/administration/)
 ```bash
 $ sudo fs set <fs name> max_file_size <size in bytes>
 ```
