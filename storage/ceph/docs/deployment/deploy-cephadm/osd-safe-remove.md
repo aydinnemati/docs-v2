@@ -34,6 +34,10 @@ $ sudo ceph osd destroy osd.{ID} --yes-i-really-mean-it
 ```bash
 $ sudo ceph osd rm osd.{ID}
 ```
+8. check if osd daemon exists in cmd below if exists, remove it
+```bash
+$ sudo ceph orch ps
+```
 
 # test osd safe remove 
 
