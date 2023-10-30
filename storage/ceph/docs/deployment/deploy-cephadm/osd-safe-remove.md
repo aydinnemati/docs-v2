@@ -4,6 +4,11 @@
 - See [medium](https://vineetcic.medium.com/how-to-remove-add-osd-from-ceph-cluster-1c038eefe522)
 
 ### recovery config default
+
+# > __befor removing any osd, should be drained with command reweght below__
+```bash
+$ ceph osd crush reweight osd.{osd-num} 0
+```
 1. set osd out
 ```bash
 $ sudo ceph osd out osd.{ID}
