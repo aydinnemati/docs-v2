@@ -62,7 +62,7 @@ sudo echo "deb http://downloads.linux.hpe.com/SDR/repo/mcp jammy/current non-fre
 After adding the repository, you need to import the HPE GPG keys:
 
 ```bash
-wget -qO- http://downloads.linux.hpe.com/SDR/hpPublicKey1024.pub | sudo apt-key add -
+wget -qO- https://downloads.linux.hpe.com/SDR/hpPublicKey1024.pub | sudo apt-key add -
 wget -qO- http://downloads.linux.hpe.com/SDR/hpPublicKey2048.pub | sudo apt-key add -
 wget -qO- http://downloads.linux.hpe.com/SDR/hpPublicKey2048_key1.pub | sudo apt-key add -
 wget -qO- http://downloads.linux.hpe.com/SDR/hpePublicKey2048_key1.pub | sudo apt-key add -
