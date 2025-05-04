@@ -1,0 +1,392 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<manifest schema_version="2.0.0.0">
+  <meta lang="en">
+    <product id="db808d6aa2e24648bcc5e3f46d635b1a">
+      <product_version>
+        <id product="db808d6aa2e24648bcc5e3f46d635b1a" version="094cdfb6840f48389ba985bf92539040" lucid_version="hponcfg.linux.x86_64@6.0.0-0__pubsw-linux_en"/>
+        <different>new</different>
+        <build number="6"/>
+        <type id="publishablesoftware-linux"/>
+        <name>
+          <name_xlate lang="en">HPE Lights-Out Online Configuration Utility for Linux (AMD64/EM64T)</name_xlate>
+        </name>
+        <alt_name>
+          <alt_name_xlate lang="en">HPE Lights-Out Online Configuration Utility for Linux (AMD64/EM64T)</alt_name_xlate>
+        </alt_name>
+        <version value="6.0.0-0" revision="" type_of_change="0"/>
+        <manufacturer_name>
+          <manufacturer_name_xlate lang="en">Hewlett Packard Enterprise</manufacturer_name_xlate>
+        </manufacturer_name>
+        <operating_systems>
+          <operating_system key="2197">
+            <operating_system_xlate>SUSE LINUX Enterprise Server 10 (AMD64/EM64T)</operating_system_xlate>
+          </operating_system>
+          <operating_system key="2951">
+            <operating_system_xlate>SUSE LINUX Enterprise Server 11 (AMD64/EM64T)</operating_system_xlate>
+          </operating_system>
+          <operating_system key="3359">
+            <operating_system_xlate>Red Hat Enterprise Linux 6 Server (x86-64)</operating_system_xlate>
+          </operating_system>
+          <operating_system key="4196">
+            <operating_system_xlate>Red Hat Enterprise Linux 7 Server</operating_system_xlate>
+          </operating_system>
+          <operating_system key="4199">
+            <operating_system_xlate>SUSE Linux Enterprise Server 12</operating_system_xlate>
+          </operating_system>
+          <operating_system key="9398">
+            <operating_system_xlate>SUSE Linux Enterprise Server 15</operating_system_xlate>
+          </operating_system>
+          <operating_system key="9677">
+            <operating_system_xlate>Red Hat Enterprise Linux 8 Server</operating_system_xlate>
+          </operating_system>
+          <operating_system key="10967">
+            <operating_system_xlate>Red Hat Enterprise Linux 9 Server</operating_system_xlate>
+          </operating_system>
+        </operating_systems>
+        <products>
+          <product rom="P77"/>
+          <product rom="P74"/>
+          <product rom="P75"/>
+          <product rom="P72"/>
+          <product rom="P73"/>
+          <product rom="P70"/>
+          <product rom="P71"/>
+          <product rom="U51"/>
+          <product rom="U50"/>
+          <product rom="P78"/>
+          <product rom="P79"/>
+          <product rom="J05"/>
+          <product rom="U43"/>
+          <product rom="U40"/>
+          <product rom="U41"/>
+          <product rom="U46"/>
+          <product rom="U47"/>
+          <product rom="U44"/>
+          <product rom="U45"/>
+          <product rom="U48"/>
+          <product rom="P89"/>
+          <product rom="P88"/>
+          <product rom="P83"/>
+          <product rom="P80"/>
+          <product rom="P86"/>
+          <product rom="P85"/>
+          <product rom="U37"/>
+          <product rom="U36"/>
+          <product rom="U34"/>
+          <product rom="U33"/>
+          <product rom="U32"/>
+          <product rom="U31"/>
+          <product rom="A56"/>
+          <product rom="U39"/>
+          <product rom="U38"/>
+          <product rom="P99"/>
+          <product rom="P92"/>
+          <product rom="P94"/>
+          <product rom="P95"/>
+          <product rom="U21"/>
+          <product rom="O42"/>
+          <product rom="I39"/>
+          <product rom="I38"/>
+          <product rom="I32"/>
+          <product rom="I31"/>
+          <product rom="I30"/>
+          <product rom="I37"/>
+          <product rom="I36"/>
+          <product rom="A46"/>
+          <product rom="A47"/>
+          <product rom="U26"/>
+          <product rom="A45"/>
+          <product rom="U20"/>
+          <product rom="A43"/>
+          <product rom="A40"/>
+          <product rom="A41"/>
+          <product rom="A48"/>
+          <product rom="U24"/>
+          <product rom="U25"/>
+          <product rom="A42"/>
+          <product rom="I44"/>
+          <product rom="J02"/>
+          <product rom="I42"/>
+          <product rom="I43"/>
+          <product rom="I40"/>
+          <product rom="I41"/>
+          <product rom="U22"/>
+          <product rom="U23"/>
+          <product rom="U19"/>
+          <product rom="U18"/>
+          <product rom="U13"/>
+          <product rom="U15"/>
+          <product rom="U14"/>
+          <product rom="U17"/>
+          <product rom="J10"/>
+          <product rom="Carbondale14"/>
+          <product rom="A26"/>
+          <product rom="A28"/>
+          <product rom="A55"/>
+          <product rom="U30"/>
+          <product rom="J03"/>
+          <product rom="U60"/>
+          <product rom="U61"/>
+          <product rom="U64"/>
+          <product rom="J04"/>
+          <product rom="J06"/>
+        </products>
+        <divisions>
+          <division key="68">
+            <division_xlate lang="en">ServerOptions</division_xlate>
+          </division>
+          <division key="64">
+            <division_xlate lang="en">Lights Out</division_xlate>
+          </division>
+          <division key="6">
+            <division_xlate lang="en">Server</division_xlate>
+          </division>
+        </divisions>
+        <category key="7800213">
+          <category_xlate lang="en">Software - Lights-Out Management</category_xlate>
+        </category>
+        <languages langlist="en">
+          <languages_xlate lang="en">English (US)</languages_xlate>
+        </languages>
+        <release_date year="2021" month="12" day="11" hour="08" minute="06" second="39"/>
+        <description>
+          <description_xlate lang="en"><![CDATA[HPE Lights-Out Online Configuration utility is a command line utility used to configure ProLiant Integrated Lights-Out processor (iLO) from within the Linux operating system without requiring a reboot of the server.]]></description_xlate>
+        </description>
+        <prerequisite_notes>
+          <prerequisite_notes_xlate lang="en">
+            <prerequisite_notes_xlate_part><![CDATA[<p>For Integrated Lights-Out 5, this utility requires minimum firmware revision 1.20 or later.</p>
+
+<p>The management interface driver and management agents must be installed on the server.</p>
+
+<p>For iLO 5 or later, openssl v1.0.x or later is required in addition to above packages.<br />
+Customers who manually compile and install openssl or intentionally relocate /usr/bin/openssl, need to set PATH environment variable to direct HPONCFG to the right/intended openssl.</p>
+]]></prerequisite_notes_xlate_part>
+          </prerequisite_notes_xlate>
+        </prerequisite_notes>
+        <installation_notes>
+          <installation_notes_xlate lang="en">
+            <installation_notes_xlate_part><![CDATA[<p>Login as the system administrator (root), download the RPM to a directory on your hard drive and change to that directory.</p>
+
+<p>If a previous version of the Hponcfg utility has been installed, it must be removed before this package can be installed. To remove the previous version of the package, type the following :</p>
+
+<ul>
+	<li>rpm -e hponcfg</li>
+</ul>
+
+<p>To install the package with dependency check, type:</p>
+
+<ul>
+	<li>rpm -ivh hponcfg-x.x.x.x86_64.rpm</li>
+</ul>
+
+<p>To install the package withour dependency check, type:</p>
+
+<ul>
+	<li>rpm -ivh --nodeps hponcfg-x.x.x.x86_64.rpm</li>
+</ul>
+
+<p>After installation, the executable for hponcfg utility can be found under the directory /sbin.</p>
+]]></installation_notes_xlate_part>
+          </installation_notes_xlate>
+        </installation_notes>
+        <availability_notes/>
+        <documentation_notes/>
+        <upgrade_requirement value="Optional"/>
+        <prerequisites>
+          <supported_operating_systems>
+            <supported_operating_system platform="suse_linux_enterprise_server_x86_64" major="10" minor="0" sr="OEM" name="SUSE LINUX Enterprise Server 10 (AMD64/EM64T)"/>
+            <supported_operating_system platform="suse_linux_enterprise_server_x86_64" major="11" minor="0" sr="OEM" name="SUSE LINUX Enterprise Server 11 (AMD64/EM64T)"/>
+            <supported_operating_system platform="red_hat_enterprise_linux_x86_64" major="6" minor="0" sr="OEM" name="Red Hat Enterprise Linux 6 Server (x86-64)"/>
+            <supported_operating_system platform="red_hat_enterprise_linux_x86_64" major="7" minor="0" sr="OEM" name="Red Hat Enterprise Linux 7 Server"/>
+            <supported_operating_system platform="suse_linux_enterprise_server_x86_64" major="12" minor="0" sr="OEM" name="SUSE Linux Enterprise Server 12"/>
+            <supported_operating_system platform="suse_linux_enterprise_server_x86_64" major="15" minor="0" sr="OEM" name="SUSE Linux Enterprise Server 15"/>
+            <supported_operating_system platform="red_hat_enterprise_linux_x86_64" major="8" minor="0" sr="OEM" name="Red Hat Enterprise Linux 8 Server"/>
+            <supported_operating_system platform="red_hat_enterprise_linux_x86_64" major="9" minor="0" sr="OEM" name="Red Hat Enterprise Linux 9 Server"/>
+          </supported_operating_systems>
+          <supported_devices>
+            <supported_devices_and>
+              <supported_device type="other">
+                <supported_device_data name="id">5219994</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="pci">
+                <supported_device_data name="ven">103C</supported_device_data>
+                <supported_device_data name="dev">3306</supported_device_data>
+                <supported_device_data name="subven">103C</supported_device_data>
+                <supported_device_data name="subdev">3381</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="pci">
+                <supported_device_data name="ven">103C</supported_device_data>
+                <supported_device_data name="dev">3307</supported_device_data>
+                <supported_device_data name="subven">103C</supported_device_data>
+                <supported_device_data name="subdev">3381</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="pci">
+                <supported_device_data name="ven">103C</supported_device_data>
+                <supported_device_data name="dev">3308</supported_device_data>
+                <supported_device_data name="subven">103C</supported_device_data>
+                <supported_device_data name="subdev">3381</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="pci">
+                <supported_device_data name="ven">103C</supported_device_data>
+                <supported_device_data name="dev">3300</supported_device_data>
+                <supported_device_data name="subven">103C</supported_device_data>
+                <supported_device_data name="subdev">3381</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="pci">
+                <supported_device_data name="ven">103C</supported_device_data>
+                <supported_device_data name="dev">3301</supported_device_data>
+                <supported_device_data name="subven">103C</supported_device_data>
+                <supported_device_data name="subdev">3381</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="pci">
+                <supported_device_data name="ven">103C</supported_device_data>
+                <supported_device_data name="dev">3302</supported_device_data>
+                <supported_device_data name="subven">103C</supported_device_data>
+                <supported_device_data name="subdev">3381</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="pci">
+                <supported_device_data name="ven">103C</supported_device_data>
+                <supported_device_data name="dev">3307</supported_device_data>
+                <supported_device_data name="subven">1590</supported_device_data>
+                <supported_device_data name="subdev">00E4</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="pci">
+                <supported_device_data name="ven">103C</supported_device_data>
+                <supported_device_data name="dev">3306</supported_device_data>
+                <supported_device_data name="subven">1590</supported_device_data>
+                <supported_device_data name="subdev">00E4</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="other">
+                <supported_device_data name="id">2f317b9d-c9e3-4d76-bff6-b9d0d085a952</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="pci">
+                <supported_device_data name="ven">103C</supported_device_data>
+                <supported_device_data name="dev">3307</supported_device_data>
+                <supported_device_data name="subven">0000</supported_device_data>
+                <supported_device_data name="subdev">0000</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="pci">
+                <supported_device_data name="ven">103C</supported_device_data>
+                <supported_device_data name="dev">3306</supported_device_data>
+                <supported_device_data name="subven">0000</supported_device_data>
+                <supported_device_data name="subdev">0000</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="other">
+                <supported_device_data name="id">2f317b9d-c9e3-4d76-bff6-b9d0d085a952</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="other">
+                <supported_device_data name="id">2f317b9d-c9e3-4d76-bff6-b9d0d085a952</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="pci">
+                <supported_device_data name="ven">103c</supported_device_data>
+                <supported_device_data name="dev">3307</supported_device_data>
+                <supported_device_data name="subven">1590</supported_device_data>
+                <supported_device_data name="subdev">00E4</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+            <supported_devices_and>
+              <supported_device type="pci">
+                <supported_device_data name="ven">103c</supported_device_data>
+                <supported_device_data name="dev">3306</supported_device_data>
+                <supported_device_data name="subven">1590</supported_device_data>
+                <supported_device_data name="subdev">00E4</supported_device_data>
+              </supported_device>
+            </supported_devices_and>
+          </supported_devices>
+          <required_diskspace/>
+        </prerequisites>
+        <installation>
+          <install>
+            <install_caps/>
+            <command/>
+            <command_params/>
+            <reboot_required value="no"/>
+            <reboot_details value="No">
+              <reboot_details_xlate lang="en">Reboot is not required after installation for updates to take effect and hardware stability to be maintained.</reboot_details_xlate>
+            </reboot_details>
+            <per_device_install_time_seconds>0</per_device_install_time_seconds>
+          </install>
+          <uninstall>
+            <uninstall_caps/>
+            <command/>
+            <command_params/>
+            <reboot_required/>
+          </uninstall>
+        </installation>
+        <sw_keys>
+          <sw_keys_and>
+            <sw_key name="hponcfg" guid="20a6e8e4-bf33-4c71-a6bf-d9eccecbdbe8">
+              <sw_key_expectedpath>software:rpm</sw_key_expectedpath>
+            </sw_key>
+          </sw_keys_and>
+        </sw_keys>
+        <filename>hponcfg-6.0.0-0.x86_64.rpm</filename>
+        <component_config/>
+        <files>
+          <file size="58KB" bytes="60070" date_modified="2022-08-23T04:02:20" md5sum="" sha1sum="" version="6.0.0" release="0">
+            <name>hponcfg-6.0.0-0.x86_64.rpm</name>
+            <url id="http://ftp.hp.com"/>
+            <url id="file://.">file://./packages/hponcfg-6.0.0-0.x86_64.rpm</url>
+            <file_list>
+              <file>./sbin/hponcfg</file>
+              <file>./usr/lib64/libhponcfg64.so</file>
+              <file>./usr/share/doc/hponcfg</file>
+              <file>./usr/share/doc/hponcfg/readme.txt</file>
+            </file_list>
+          </file>
+        </files>
+        <file_details/>
+        <revision_history>
+          <revision>
+            <version value="6.0.0-0" revision="" type_of_change="0"/>
+            <revision_enhancements_xlate lang="en">
+              <revision_enhancements_xlate_part><![CDATA[<p>Introduced support for iLO6.</p>
+]]></revision_enhancements_xlate_part>
+            </revision_enhancements_xlate>
+            <revision_fixes_xlate lang="en">
+              <revision_fixes_xlate_part/>
+            </revision_fixes_xlate>
+          </revision>
+          <revision>
+            <version value="5.7.0-0 (A)" revision="A" type_of_change="0"/>
+            <revision_enhancements_xlate lang="en">
+              <revision_enhancements_xlate_part/>
+            </revision_enhancements_xlate>
+            <revision_fixes_xlate lang="en">
+              <revision_fixes_xlate_part><![CDATA[<p>- Fixed an issue where HPONCFG package failing to upload to iLO repository when iLO is in CNSA state.</p>
+]]></revision_fixes_xlate_part>
+            </revision_fixes_xlate>
+          </revision>
+        </revision_history>
+      </product_version>
+    </product>
+  </meta>
+</manifest>
