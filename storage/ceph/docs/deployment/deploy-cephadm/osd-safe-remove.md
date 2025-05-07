@@ -43,6 +43,11 @@ $ sudo ceph osd rm osd.{ID}
 ```bash
 $ sudo ceph orch ps
 ```
+9. remove its daemon
+```bash
+$ sudo ceph orch ps
+$ sudo ceph orch daemon rm
+```
 
 # test osd safe remove 
 
